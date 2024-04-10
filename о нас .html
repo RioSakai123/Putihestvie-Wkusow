@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Наше меню</title>
+  <link rel="stylesheet" href="styletii.css">
+</head>
+<body>
+  <header>
+    <h1>Путешествие вкусов</h1>
+</header>
+  
+<nav>
+    <ul>
+      <li><a href="./index.html">Меню</a></li>
+      <li><a href="./napitki.html">Напитки</a></li>
+      <li><a href="./deserti.html">Десерты</a></li>
+      <li><a href="./gorachee.html">Горячее</a></li>
+      <li><a href="./popular.html">Популярное</a></li>
+      <li><a href="./stylesq.html">Новинки</a></li>
+      <li><a href="./zakucki.html">Закуски</a></li>
+      <li><a href="./страница%20о%20регионах.html">О регионах</a></li>
+      <li><a href="./Региональный%20бум.html">Региональный бум</a></li>
+      <li><a href="./о%20нас%20.html">О нас</a></li>
+    </ul>
+  </nav>
+</body>
+
+<body>
+
+<!-- Подключение скрипта -->
+<script src="script.js"></script>
+
+</body>
+
+
+<ul class="cards">
+  <li>
+    <a href="" class="card">
+      <img src="kartinka o nas 1.png" class="card__image" alt="0" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+          <img class="card__thumb" src="ava antona.png" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Пфайфер Антон</h3>            
+            <span class="card__status">7 часов </span>
+          </div>
+        </div>
+        <p class="card__description">Мага контентной части</p>
+      </div>
+    </a>      
+  </li>
+  <li>
+    <a href="" class="card">
+      <img src="kartinka o nas 2.png" class="card__image" alt="" />
+      <div class="card__overlay">        
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <img class="card__thumb" src="ava tani.png" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Довыденко Татьяна</h3>
+            <span class="card__status">5 часов</span>
+          </div>
+        </div>
+        <p class="card__description">Разработала хедер и меню</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="" class="card">
+      <img src="kartinka o nas 3.png" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+          <img class="card__thumb" src="ava tani.png" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Довыденко Татьяна</h3>
+            <span class="card__tagline">Бос визуальная часть</span>            
+            <span class="card__status">8 часов</span>
+          </div>
+        </div>
+        <p class="card__description">Нервный срыв визуальной части</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="" class="card">
+      <img src="kartinka o nas 4.png" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <img class="card__thumb" src="ava antona.png" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Пфайфер Антон</h3>
+            <span class="card__status">9 часов</span>
+          </div>          
+        </div>
+        <p class="card__description">Создатель основных моментов сайта</p>
+      </div>
+    </a>
+  </li>    
+</ul>
+
+<button type="button" id="back-to-top" class="btn btn-primary">↑</button>
+
+<script>
+ // Получить кнопку "Наверх"
+const backToTopButton = document.getElementById("back-to-top");
+
+// Прослушивать событие прокрутки
+window.addEventListener("scroll", () => {
+  // Проверить, находится ли пользователь в нижней части страницы
+  if (window.scrollY > 100) {
+    // Показать кнопку "Наверх"
+    backToTopButton.classList.add("active");
+  } else {
+    // Скрыть кнопку "Наверх"
+    backToTopButton.classList.remove("active");
+  }
+});
+
+// Прослушивать нажатие на кнопку "Наверх"
+backToTopButton.addEventListener("click", () => {
+  // Прокрутить страницу к началу
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+</script>
+
+<div class="contact-info">
+  <h2>Наши контактные данные</h2>
+  <p>Email: example@example.com</p>
+  <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+</div>
+
+
+  <footer>
+    <p>Copyright &copy; 2024 Путешествие вкусов</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Путешествие вкусов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Путешествие вкусов</h1>
+</header>
+  
+<nav>
+    <ul>
+      <li><a href="./napitki.html">Напитки</a></li>
+      <li><a href="./deserti.html">Десерты</a></li>
+      <li><a href="./gorachee.html">Горячее</a></li>
+      <li><a href="./popular.html">Популярное</a></li>
+      <li><a href="./stylesq.html">Новинки</a></li>
+      <li><a href="./zakucki.html">Закуски</a></li>
+      <li><a href="./страница%20о%20регионах.html">О регионах</a></li>
+      <li><a href="./Региональный%20бум.html">Региональный бум</a></li>
+      <li><a href="./о%20нас%20.html">О нас</a></li>
+    </ul>
+  </nav>
+
+  <main>
+<section class="art-container">
+<img src="art21.png" alt="Арт">
+</section>
+
+<section class="menu-heading">
+<h2>Наше меню</h2>
+</section>
+
+<section class="menu-items">
+<article>
+<a href="./stylesq.html">
+  <img src="новинки.png" alt="Новинки">
+</a>
+<p></p>
+
+</article>
+<article>
+<a href="./popular.html">
+  <img src="популярное.png" alt="Популярное">
+</a>
+
+<p></p>
+
+</article>
+<article>
+<a href="./napitki.html">
+<img src="напитки.png" alt="Напитки">
+</a>
+<p></p>
+
+</article>
+<article>
+<a href="./deserti.html">
+<img src="десертыы.png" alt="Десерты">
+</a>
+<p></p>
+
+</article>
+<article>
+<a href="./gorachee.html">
+<img src="горячее.png" alt="Горячие блюда">
+</a>
+<p></p>
+
+</article>
+<article>
+<a href="./zakucki.html">
+<img src="закуски.png" alt="Закуски">
+</a>
+<p></p>
+
+</article>
+
+</article>
+</section>
+</main>
+
+<button type="button" id="back-to-top" class="btn btn-primary">↑</button>
+
+<script>
+ // Получить кнопку "Наверх"
+const backToTopButton = document.getElementById("back-to-top");
+
+// Прослушивать событие прокрутки
+window.addEventListener("scroll", () => {
+  // Проверить, находится ли пользователь в нижней части страницы
+  if (window.scrollY > 100) {
+    // Показать кнопку "Наверх"
+    backToTopButton.classList.add("active");
+  } else {
+    // Скрыть кнопку "Наверх"
+    backToTopButton.classList.remove("active");
+  }
+});
+
+// Прослушивать нажатие на кнопку "Наверх"
+backToTopButton.addEventListener("click", () => {
+  // Прокрутить страницу к началу
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+</script>
+
+
+
+
+  <footer>
+    <p>Copyright &copy; 2024 Путешествие вкусов</p>
+  </footer>
+</body>
+</html>
